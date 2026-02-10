@@ -12,11 +12,12 @@ An oracle seems to be a magic 8 ball that just knows the answer to everything in
 In our case, an oracle is a function that takes a bit string as input and returns a bit as output.
 
 ### balanced vs constant function
-A balanced function is when a bit string returns basically exactly half 1's and 0's in the bit string
+A balanced function is one where, over all possible input bit strings, exactly half of them produce an output of 0 and the other half produce an output of 1.
 
 A constant function is either its all 1's or 0's for a bit string.
 
-## Why the quantum computer does it better than regular computers
+
+# Why the quantum computer does it better than regular computers
 In classical computing, you wold need to check more than half of all possible inputs for some function to know if its constant or balanced
 
 That is O(2^n)
@@ -27,7 +28,7 @@ In quantum computing, you only need to do one call to this magical oracle.
 That is O(1)
 
 
-## How the algorithm works
+# How the algorithm works
 You can read about the steps on [wikipedia](https://en.wikipedia.org/wiki/Deutsch%E2%80%93Jozsa_algorithm)
 
 basically if you start with \ket{0}, then you want to make it \ket{1} by applying an X gate.
